@@ -30,7 +30,7 @@ con.connect(function(err){
 });
 
 login = function (email, password, callback) {
-  var query = "SELECT * FROM `Node_js` WHERE email ='"+email+ "' AND password ='"+password+ "'";
+  var query = "SELECT * FROM `Node_js` WHERE email ='" +email+ "' AND password ='" +password+ "'";
   con.query(query, callback);
 };
 
